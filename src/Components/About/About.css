@@ -1,0 +1,110 @@
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+  padding: 2rem;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 3rem 2rem;
+  width: 100%;
+  max-width: 800px;
+  color: #f1f5f9;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-card:hover {
+  transform: perspective(1000px) rotateX(4deg) rotateY(4deg);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+}
+
+.about-3d-text h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #38bdf8;
+  text-shadow: 0 4px 10px rgba(56, 189, 248, 0.5);
+  animation: float 3s ease-in-out infinite;
+}
+
+.about-3d-text span {
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-description h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-description p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Floating Animation for the Name */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 2rem 1.5rem;
+  }
+  .about-3d-text h1 {
+    font-size: 2rem;
+  }
+  .about-description h2 {
+    font-size: 1.6rem;
+  }
+  .about-description p {
+    font-size: 1rem;
+  }
+}
+/* src/Components/About/About.css */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(145deg, #4CAF50, #388E3C);
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+  background: linear-gradient(145deg, #388E3C, #4CAF50);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus {
+  outline: none;
+}
