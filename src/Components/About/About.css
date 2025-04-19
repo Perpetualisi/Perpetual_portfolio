@@ -63,22 +63,33 @@
   }
 }
 
-/* Responsive */
+/* Mobile Fix: Card Positioned Lower */
 @media (max-width: 768px) {
+  .about-section {
+    display: block;
+    min-height: auto; /* Remove 100vh restriction on mobile */
+    padding: 7rem 1.5rem 3rem 1.5rem; /* More space at the top */
+  }
+
   .about-card {
+    margin: 4rem auto 0 auto;  /* Push card downward */
     padding: 2rem 1.5rem;
   }
+
   .about-3d-text h1 {
     font-size: 2rem;
   }
+
   .about-description h2 {
     font-size: 1.6rem;
   }
+
   .about-description p {
     font-size: 1rem;
   }
 }
-/* src/Components/About/About.css */
+
+/* Button Styling */
 .btn {
   display: inline-block;
   padding: 12px 30px;
