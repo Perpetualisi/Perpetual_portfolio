@@ -25,7 +25,7 @@ const About = () => {
             I continuously explore new technologies, creative design systems, and frameworks to stay ahead in the fast-evolving web space.
             My goal is to turn ideas into visually stunning and functional digital products.
           </p>
-          <a href="/Frontend Dev cv.pdf" className="btn">Download Resume</a> {/* Add your resume link */}
+          <a href="/Perpetual_cv.pdf" className="btn">Download Resume</a> {/* Add your resume link */}
         </div>
 
       </div>
