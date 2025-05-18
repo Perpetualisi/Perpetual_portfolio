@@ -17,7 +17,6 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path='/skills' element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
-        {/* Add more pages here like projects, contact later */}
       </Routes>
     </Router>
   );

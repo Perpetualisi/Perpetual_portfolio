@@ -10,7 +10,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">Perpetual</div>
+      <div className="logo">
+        <Link to="/">Perpetual</Link>
+      </div>
 
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
         <Link to="/" onClick={handleLinkClick} className="nav-item">Home</Link>
@@ -20,8 +22,10 @@ const Navbar = () => {
         <Link to="/contact" onClick={handleLinkClick} className="nav-item">Contact</Link>
       </div>
 
-      <div className="menu-icon" onClick={handleToggle}>
-        {isOpen ? <span className="cancel-icon">&#10005;</span> : <span className="hamburger-icon">&#9776;</span>}
+      <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={handleToggle}>
+        <div className="bar top-bar"></div>
+        <div className="bar middle-bar"></div>
+        <div className="bar bottom-bar"></div>
       </div>
     </nav>
   );
