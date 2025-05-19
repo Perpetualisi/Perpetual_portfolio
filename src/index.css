@@ -11,7 +11,7 @@ html {
 
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100svh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background-color: black;
@@ -20,7 +20,9 @@ body {
 .main-container {
   min-height: 100svh;
   overflow-x: hidden;
-  background-color: #fff;
   color: #111;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body {
+  overflow-x: hidden;
 }
