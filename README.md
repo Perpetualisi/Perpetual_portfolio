@@ -15,7 +15,7 @@ This is a modern, responsive, and animated React-based portfolio showcasing my p
 
 - ⚛️ React (Vite)
 - 🎨 Plain CSS
-- 🧭 React Router DOM
+- 🧭 React er DOM
 - 💡 Smooth scroll and modern UI
 - 💻 Fully Responsive Design
 

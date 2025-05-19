@@ -1,5 +1,6 @@
 .contact-section {
-  padding: 5rem 2rem;
+  padding: 4rem 2rem 6rem;
+  min-height: 100vh; 
   background: #1E293B;
   color: #f1f5f9;
   display: flex;
