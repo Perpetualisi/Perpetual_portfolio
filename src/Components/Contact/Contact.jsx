@@ -25,7 +25,7 @@ const Contact = () => {
             <div className="input-group">
               <textarea placeholder="Tell me about your project..." required></textarea>
             </div>
-            <button type="submit" className="btn submit-btn glow">🚀 Send Message</button>
+            <button type="submit" className="btn submit-btn glow">✉️Send Message</button>
           </form>
         </div>
 

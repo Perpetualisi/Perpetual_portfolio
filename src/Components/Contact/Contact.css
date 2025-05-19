@@ -41,8 +41,8 @@
   margin-top: 15px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #fff;
-  background: linear-gradient(145deg, #4CAF50, #388E3C);
+  color:black;
+  background: #00ffb3; 
   border-radius: 50px;
   text-align: center;
   text-decoration: none;
@@ -52,7 +52,7 @@
 }
 
 .contact-btn:hover {
-  background: linear-gradient(145deg, #388E3C, #4CAF50);
+  background: linear-gradient(145deg, #468049, #90d092);
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -103,8 +103,8 @@
   width: 100%;
   padding: 14px;
   font-size: 1.2rem;
-  color: #fff;
-  background: linear-gradient(145deg, #4CAF50, #388E3C);
+  color:black;
+  background:#00ffc8;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -113,7 +113,7 @@
 }
 
 .submit-btn:hover {
-  background: linear-gradient(145deg, #388E3C, #4CAF50);
+  background: linear-gradient(145deg, #388E3C, #98df9a);
   transform: translateY(-3px);
 }
 
