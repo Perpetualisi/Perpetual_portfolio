@@ -1,31 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaHome, FaUser, FaProjectDiagram, FaTools, FaEnvelope } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleToggle = () => setIsOpen(!isOpen);
-  const handleLinkClick = () => setIsOpen(false);
-
   return (
     <nav className="navbar">
       <div className="logo">
         <Link to="/">Perpetual</Link>
       </div>
 
-      <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <Link to="/" onClick={handleLinkClick} className="nav-item">Home</Link>
-        <Link to="/about" onClick={handleLinkClick} className="nav-item">About</Link>
-        <Link to="/projects" onClick={handleLinkClick} className="nav-item">Projects</Link>
-        <Link to="/skills" onClick={handleLinkClick} className="nav-item">Skills</Link>
-        <Link to="/contact" onClick={handleLinkClick} className="nav-item">Contact</Link>
-      </div>
-
-      <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={handleToggle}>
-        <div className="bar top-bar"></div>
-        <div className="bar middle-bar"></div>
-        <div className="bar bottom-bar"></div>
+      <div className="nav-links">
+        <Link to="/" className="nav-item">
+          <FaHome className="icon mobile-only" /> <span>HOME</span>
+        </Link>
+        <Link to="/about" className="nav-item">
+          <FaUser className="icon mobile-only" /> <span>ABOUT</span>
+        </Link>
+        <Link to="/projects" className="nav-item">
+          <FaProjectDiagram className="icon mobile-only" /> <span>POJECTS</span>
+        </Link>
+        <Link to="/skills" className="nav-item">
+          <FaTools className="icon mobile-only" /> <span>SKILLS</span>
+        </Link>
+        <Link to="/contact" className="nav-item">
+          <FaEnvelope className="icon mobile-only" /> <span>CONTACTS</span>
+        </Link>
       </div>
     </nav>
   );
